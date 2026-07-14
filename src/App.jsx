@@ -73,7 +73,7 @@ async function handleGenerate() {
 
   return (
      <div style={{ padding: 24, maxWidth: 480 }}>
-      <h1>DIY車中泊女子向け商品説明ジェネレーター</h1>
+      <h1>DIY車中泊女子向け コンテンツジェネレーター</h1>
 
       <label>
         {type === "商品説明" ? "商品名"
@@ -109,7 +109,7 @@ async function handleGenerate() {
       {loading ? "生成中…" : "生成する"}
       </button>
 
-      {/* <p style={{ whiteSpace: "pre-wrap", marginTop: 16 }}>{result}</p> */}
+      <p style={{ whiteSpace: "pre-wrap", marginTop: 16 }}>{result}</p>
 
        <h2>生成したコンテンツ（{contents.length}件）</h2>
       {contents.length === 0 ? (
