@@ -1,5 +1,5 @@
-/* src/components/ContentCard.module.css */
-.card {
+
+/* .card {
   padding: 16px;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
@@ -20,4 +20,56 @@
   background: #f0c9dc;
   color: #f1077c;
 }
+.body { margin: 0; white-space: pre-wrap; color: #374151; } */
+
+.card {
+  padding: 20px;
+  border: none;                          /* 硬い枠線をやめる */
+  border-radius: 20px;                   /* 丸みを強く */
+  background: rgba(255, 255, 255, 0.92);  /* 少し透けさせて木目と馴染ませる */
+  margin-bottom: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);  /* ふんわり影で浮遊感 */
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.name { margin: 0; font-size: 16px; color: #4f46e5; }
+.status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
 .body { margin: 0; white-space: pre-wrap; color: #374151; }
+
+/* .draft{
+  background: #f3f4f6;
+  color: #6b7280;
+
+}
+.done{
+  background: #f3f4f6;
+  color: #155ceb;
+}
+.published{
+  background: #f3f4f6;
+  color: #f10eb1;
+}
+   */
+
+.draft {
+  background: #fce7f3;   /* 優しいピンク */
+  color: #be185d;
+}
+.done {
+  background: #fef3c7;   /* 温かい黄色 */
+  color: #d97706;
+}
+.published {
+  background: #dcfce7;   /* 優しい緑 */
+  color: #16a34a;
+}
